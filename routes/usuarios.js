@@ -22,10 +22,6 @@ router.post('/',[
     check('correo').custom(emailExiste),
     check('documento', 'El documento es requerido').not().isEmpty(),
     check('documento').custom(documentoExiste),
-    check('nombre_finca', 'El nombre de la finca es requerido').not().isEmpty(),
-    check('area_predio', 'El area total en hectareas de la finca es requerida').not().isEmpty(),
-    check('hectareas_sembradas', 'El numero de hectareas sembradas con cacao es requerido').not().isEmpty(),
-    check('clones_finca', 'Los clones que posee en la finca son requeridos').not().isEmpty(),
     validarCampos
 ], usuariosPost);
 
@@ -37,3 +33,9 @@ router.delete('/:id',[
 ], usuariosDelete);
 
 module.exports = router;
+
+
+//check('nombre_finca', 'El nombre de la finca es requerido').not().isEmpty(),
+    //check('area_predio', 'El area total en hectareas de la finca es requerida').not().isEmpty(),
+    //check('hectareas_sembradas', 'El numero de hectareas sembradas con cacao es requerido').not().isEmpty(),
+    //check('clones_finca', 'Los clones que posee en la finca son requeridos').not().isEmpty(),

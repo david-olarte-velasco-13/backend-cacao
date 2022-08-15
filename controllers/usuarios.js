@@ -31,8 +31,8 @@ const usuariosPost = async(req, res = response) => {
 
     
 
-    const { nombre, correo, password, documento, nombre_finca, area_predio, hectareas_sembradas, clones_finca, altura_finca } = req.body;
-    const usuario = new Usuario({nombre, correo, password, documento, nombre_finca, area_predio, hectareas_sembradas, clones_finca, altura_finca});
+    const { nombre, correo, password, documento } = req.body;
+    const usuario = new Usuario({nombre, correo, password, documento});
 
 
 

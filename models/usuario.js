@@ -19,30 +19,30 @@ const UsuarioSchema = Schema({
         required: [true, 'El documento es requerido'],
         unique: true
     },
-    nombre_finca: {
-        type: String,
-        required: [true, 'El nombre de la finca es requerido']
-    },
-    area_predio: {
-        type: String,
-        required: [true, 'El area total en hectareas de la finca es requerida']
-    },
+    //nombre_finca: {
+    //    type: String,
+    //    required: [true, 'El nombre de la finca es requerido']
+    //},
+    //area_predio: {
+    //    type: String,
+    //    required: [true, 'El area total en hectareas de la finca es requerida']
+    //},
     estado: {
         type: Boolean,
         default: true
     },
-    hectareas_sembradas: {
-        type: String,
-        required: [true, 'El numero de hectareas sembradas con cacao es requerido']
-    },
-    clones_finca: {
-        type: String,
-        required: [true, 'Los clones que posee en la finca son requeridos']
-    },
-    altura_finca: {
-        type: String,
-        default: "No se conoce el dato"
-    }
+    //hectareas_sembradas: {
+    //    type: String,
+    //    required: [true, 'El numero de hectareas sembradas con cacao es requerido']
+    //},
+    //clones_finca: {
+    //    type: String,
+    //    required: [true, 'Los clones que posee en la finca son requeridos']
+    //},
+    //altura_finca: {
+    //    type: String,
+    //    default: "No se conoce el dato"
+    //}
 });
 
 UsuarioSchema.methods.toJSON = function() {
