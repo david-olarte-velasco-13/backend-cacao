@@ -1,3 +1,8 @@
-# Web  + rest server
+# # Web  + rest server
 
-Recordar que para reinstalar los modulos de node se debe ejecutar el comando ```npm install```
+# Installing
+
+1. git clone https://github.com/olarte-droid/backend-cacao.git
+2. cd backend-cacao
+3. npm install
+4. Done! 
